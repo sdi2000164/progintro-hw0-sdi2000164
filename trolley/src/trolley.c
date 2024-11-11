@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    long long left_cost, right_cost;
+    long long left_cost, right_cost; // long long για να μπορώ να έχω -10^18 μέχρι 10^18 τιμές
 
     while (1) {
         // Ζητά από το χρήστη το κόστος για την αριστερή επιλογή
@@ -13,7 +13,7 @@ int main() {
             printf("Terminating.\n");
             return 0;
         } else if (left_input != 1) {
-            // Αν δεν υπάρχει έγκυρη είσοδος για το αριστερό κόστος, εμφανίζει μήνυμα και τερματίζει
+            // Αν δεν υπάρχει έγκυρη είσοδος για το αριστερό κόστος, εμφανίζει μήνυμα και τερματίζει με κωδικό εξόδου 1
             printf("Terminating.\n");
             return 1;
         }
@@ -26,7 +26,7 @@ int main() {
             printf("No right cost provided.\n");
             return 1;
         } else if (right_input != 1) {
-            // Αν δεν υπάρχει έγκυρη είσοδος για το δεξί κόστος, εμφανίζει μήνυμα και τερματίζει
+            // Αν δεν υπάρχει έγκυρη είσοδος για το δεξί κόστος, εμφανίζει μήνυμα και τερματίζει με κωδικό εξόδου 1
             printf("Terminating.\n");
             return 1;
         }
